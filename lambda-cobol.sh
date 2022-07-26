@@ -11,7 +11,7 @@ LAMBDA_NAME='lambda-cobol-hello-world'
 SAM_TEMPLATE='lambda-cobol-sam.yaml'
 STACK_NAME='lambda-cobol-stack'
 BUILD_DIR='build'
-BUCKET_NAME='net.marcsupial.lambda-code'
+BUCKET_NAME='net.marcsupial.lambdacode'
 
 set -e
 trap 'catch $? $LINENO' EXIT
