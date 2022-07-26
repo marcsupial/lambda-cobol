@@ -143,28 +143,28 @@ Below are the logs of the last execution related to the Lamdba service operated 
 
 ```
  
-### execution date: Thu Jul 21 01:36:27 UTC 2022
+### execution date: Tue Jul 26 17:53:46 UTC 2022
  
 ### Check existing Lambdas functions...
 {
     "Functions": [
         {
-            "FunctionName": "Hello-world-Python",
-            "FunctionArn": "arn:aws:lambda:us-east-1:514764745669:function:Hello-world-Python",
-            "Runtime": "python3.8",
-            "Role": "arn:aws:iam::514764745669:role/service-role/Hello-world-Python-role-lyqky200",
-            "Handler": "lambda_function.lambda_handler",
-            "CodeSize": 299,
+            "FunctionName": "HelloSam-HelloWorldFunction-G43W2Z2xnScv",
+            "FunctionArn": "arn:aws:lambda:us-east-1:898857180311:function:HelloSam-HelloWorldFunction-G43W2Z2xnScv",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::898857180311:role/HelloSam-HelloWorldFunctionRole-1MIKO287MRYH",
+            "Handler": "app.lambda_handler",
+            "CodeSize": 452838,
             "Description": "",
             "Timeout": 3,
             "MemorySize": 128,
-            "LastModified": "2021-02-06T10:48:38.267+0000",
-            "CodeSha256": "fI06ZlRH/KN6Ra3twvdRllUYaxv182Tjx0qNWNlKIhI=",
+            "LastModified": "2022-05-15T17:02:57.489+0000",
+            "CodeSha256": "ixQZV8OHN5GAxjBDNlXlVxuEd8guPGVcyHFAhnYLzZE=",
             "Version": "$LATEST",
             "TracingConfig": {
                 "Mode": "PassThrough"
             },
-            "RevisionId": "d90d1b6d-667c-46d9-b9d5-e7fdefdfc004",
+            "RevisionId": "c97d0b53-9cc8-4487-a011-c30556a6bf4e",
             "PackageType": "Zip",
             "Architectures": [
                 "x86_64"
@@ -199,7 +199,7 @@ Commands you can use next
 	Region                       : us-east-1
 	Confirm changeset            : False
 	Disable rollback             : False
-	Deployment s3 bucket         : net.didier-durand.lambda-code
+	Deployment s3 bucket         : net.marcsupial.lamdacobol
 	Capabilities                 : ["CAPABILITY_IAM"]
 	Parameter overrides          : {}
 	Signing Profiles             : {}
@@ -224,10 +224,10 @@ Operation                LogicalResourceId        ResourceType             Repla
                                                   pi                                              
 -------------------------------------------------------------------------------------------------
 
-Changeset created successfully. arn:aws:cloudformation:us-east-1:514764745669:changeSet/samcli-deploy1658367521/808fee11-1ede-4029-bc55-94f1ea5b0ec5
+Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1658858152/05876ca8-b20c-4ebc-9391-aff01b34ef89
 
 
-2022-07-21 01:38:53 - Waiting for stack create/update to complete
+2022-07-26 17:56:04 - Waiting for stack create/update to complete
 
 CloudFormation events from stack operations (refresh every 0.5 seconds)
 -------------------------------------------------------------------------------------------------
@@ -290,9 +290,9 @@ invocation result:
 {
     "items": [
         {
-            "id": "hn6pnx1oz0",
-            "name": "lambda-cobol-stack",
-            "createdDate": "2022-07-21T01:39:31+00:00",
+            "id": "bjehqbn9q6",
+            "name": "HelloSam",
+            "createdDate": "2022-05-15T17:02:53+00:00",
             "version": "1.0",
             "apiKeySource": "HEADER",
             "endpointConfiguration": {
@@ -302,15 +302,33 @@ invocation result:
             },
             "tags": {
                 "aws:cloudformation:logical-id": "ServerlessRestApi",
-                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:514764745669:stack/lambda-cobol-stack/da3725f0-0895-11ed-b4f9-12793982cf31",
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:898857180311:stack/HelloSam/be9d5390-d470-11ec-bbb4-0e87df064301",
+                "aws:cloudformation:stack-name": "HelloSam"
+            },
+            "disableExecuteApiEndpoint": false
+        },
+        {
+            "id": "jpbq6w7nig",
+            "name": "lambda-cobol-stack",
+            "createdDate": "2022-07-26T17:56:43+00:00",
+            "version": "1.0",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "EDGE"
+                ]
+            },
+            "tags": {
+                "aws:cloudformation:logical-id": "ServerlessRestApi",
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:898857180311:stack/lambda-cobol-stack/313be190-0d0c-11ed-bdd8-0adddb998f13",
                 "aws:cloudformation:stack-name": "lambda-cobol-stack"
             },
             "disableExecuteApiEndpoint": false
         }
     ]
 }
-api id: hn6pnx1oz0
+api id: jpbq6w7nig
  
-### Running curl https request to https://hn6pnx1oz0.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
+### Running curl https request to https://jpbq6w7nig.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
 Hello World from COBOL! 
 ```
