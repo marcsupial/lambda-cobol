@@ -143,7 +143,7 @@ Below are the logs of the last execution related to the Lamdba service operated 
 
 ```
  
-### execution date: Thu Oct 13 03:40:48 UTC 2022
+### execution date: Thu Oct 20 03:36:49 UTC 2022
  
 ### Check existing Lambdas functions...
 {
@@ -224,10 +224,10 @@ Operation                LogicalResourceId        ResourceType             Repla
                                                   pi                                              
 -------------------------------------------------------------------------------------------------
 
-Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1665632556/443b27fa-84ca-4d77-99a0-be337a39fb87
+Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1666237134/f3d0857d-5f47-4862-bd71-4922b5e81d94
 
 
-2022-10-13 03:42:47 - Waiting for stack create/update to complete
+2022-10-20 03:39:06 - Waiting for stack create/update to complete
 
 CloudFormation events from stack operations (refresh every 0.5 seconds)
 -------------------------------------------------------------------------------------------------
@@ -290,6 +290,24 @@ invocation result:
 {
     "items": [
         {
+            "id": "3gbbdszm9h",
+            "name": "lambda-cobol-stack",
+            "createdDate": "2022-10-20T03:39:42+00:00",
+            "version": "1.0",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "EDGE"
+                ]
+            },
+            "tags": {
+                "aws:cloudformation:logical-id": "ServerlessRestApi",
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:898857180311:stack/lambda-cobol-stack/b92d96c0-5028-11ed-840a-0a8772fee84d",
+                "aws:cloudformation:stack-name": "lambda-cobol-stack"
+            },
+            "disableExecuteApiEndpoint": false
+        },
+        {
             "id": "bjehqbn9q6",
             "name": "HelloSam",
             "createdDate": "2022-05-15T17:02:53+00:00",
@@ -306,29 +324,11 @@ invocation result:
                 "aws:cloudformation:stack-name": "HelloSam"
             },
             "disableExecuteApiEndpoint": false
-        },
-        {
-            "id": "nvmfb0pook",
-            "name": "lambda-cobol-stack",
-            "createdDate": "2022-10-13T03:43:25+00:00",
-            "version": "1.0",
-            "apiKeySource": "HEADER",
-            "endpointConfiguration": {
-                "types": [
-                    "EDGE"
-                ]
-            },
-            "tags": {
-                "aws:cloudformation:logical-id": "ServerlessRestApi",
-                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:898857180311:stack/lambda-cobol-stack/140e18b0-4aa9-11ed-9214-0ac911f3b39b",
-                "aws:cloudformation:stack-name": "lambda-cobol-stack"
-            },
-            "disableExecuteApiEndpoint": false
         }
     ]
 }
-api id: nvmfb0pook
+api id: 3gbbdszm9h
  
-### Running curl https request to https://nvmfb0pook.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
+### Running curl https request to https://3gbbdszm9h.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
 Hello World from COBOL! 
 ```
