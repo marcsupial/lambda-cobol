@@ -143,7 +143,7 @@ Below are the logs of the last execution related to the Lamdba service operated 
 
 ```
  
-### execution date: Thu Nov 24 02:33:31 UTC 2022
+### execution date: Thu Dec  1 02:49:50 UTC 2022
  
 ### Check existing Lambdas functions...
 {
@@ -187,9 +187,8 @@ Commands you can use next
 =========================
 [*] Validate SAM template: sam validate
 [*] Invoke Function: sam local invoke -t build/template.yaml
-[*] Test Function in the Cloud: sam sync --stack-name {stack-name} --watch
+[*] Test Function in the Cloud: sam sync --stack-name {{stack-name}} --watch
 [*] Deploy: sam deploy --guided --template-file build/template.yaml
-        
  
 ### Starting SAM deployment...
 
@@ -224,10 +223,10 @@ Operation                LogicalResourceId        ResourceType             Repla
                                                   pi                                              
 -------------------------------------------------------------------------------------------------
 
-Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1669257333/bab2ed27-98ad-461f-9ce3-6edaa4ee165f
+Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1669863111/01a61733-c6ea-4b58-8131-709b31637980
 
 
-2022-11-24 02:35:45 - Waiting for stack create/update to complete
+2022-12-01 02:52:03 - Waiting for stack create/update to complete
 
 CloudFormation events from stack operations (refresh every 0.5 seconds)
 -------------------------------------------------------------------------------------------------
@@ -247,10 +246,10 @@ CREATE_IN_PROGRESS       AWS::ApiGateway::RestA   ServerlessRestApi        Resou
                          pi                                                Initiated              
 CREATE_COMPLETE          AWS::ApiGateway::RestA   ServerlessRestApi        -                      
                          pi                                                                       
-CREATE_IN_PROGRESS       AWS::Lambda::Permissio   HelloWorldCobolGetReso   -                      
-                         n                        urcePermissionProd                              
 CREATE_IN_PROGRESS       AWS::ApiGateway::Deplo   ServerlessRestApiDeplo   -                      
                          yment                    ymentaf1c952223                                 
+CREATE_IN_PROGRESS       AWS::Lambda::Permissio   HelloWorldCobolGetReso   -                      
+                         n                        urcePermissionProd                              
 CREATE_IN_PROGRESS       AWS::Lambda::Permissio   HelloWorldCobolGetReso   Resource creation      
                          n                        urcePermissionProd       Initiated              
 CREATE_IN_PROGRESS       AWS::ApiGateway::Deplo   ServerlessRestApiDeplo   Resource creation      
@@ -290,24 +289,6 @@ invocation result:
 {
     "items": [
         {
-            "id": "2j10bog2nj",
-            "name": "lambda-cobol-stack",
-            "createdDate": "2022-11-24T02:36:20+00:00",
-            "version": "1.0",
-            "apiKeySource": "HEADER",
-            "endpointConfiguration": {
-                "types": [
-                    "EDGE"
-                ]
-            },
-            "tags": {
-                "aws:cloudformation:logical-id": "ServerlessRestApi",
-                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:898857180311:stack/lambda-cobol-stack/ac172210-6ba0-11ed-83b4-0edb73344c2f",
-                "aws:cloudformation:stack-name": "lambda-cobol-stack"
-            },
-            "disableExecuteApiEndpoint": false
-        },
-        {
             "id": "bjehqbn9q6",
             "name": "HelloSam",
             "createdDate": "2022-05-15T17:02:53+00:00",
@@ -324,11 +305,29 @@ invocation result:
                 "aws:cloudformation:stack-name": "HelloSam"
             },
             "disableExecuteApiEndpoint": false
+        },
+        {
+            "id": "usjix92aqe",
+            "name": "lambda-cobol-stack",
+            "createdDate": "2022-12-01T02:52:41+00:00",
+            "version": "1.0",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "EDGE"
+                ]
+            },
+            "tags": {
+                "aws:cloudformation:logical-id": "ServerlessRestApi",
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:898857180311:stack/lambda-cobol-stack/1b900210-7123-11ed-8b05-0a5f690283d7",
+                "aws:cloudformation:stack-name": "lambda-cobol-stack"
+            },
+            "disableExecuteApiEndpoint": false
         }
     ]
 }
-api id: 2j10bog2nj
+api id: usjix92aqe
  
-### Running curl https request to https://2j10bog2nj.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
+### Running curl https request to https://usjix92aqe.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
 Hello World from COBOL! 
 ```
