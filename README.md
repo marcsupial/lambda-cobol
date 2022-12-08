@@ -143,7 +143,7 @@ Below are the logs of the last execution related to the Lamdba service operated 
 
 ```
  
-### execution date: Thu Dec  1 02:49:50 UTC 2022
+### execution date: Thu Dec  8 02:21:13 UTC 2022
  
 ### Check existing Lambdas functions...
 {
@@ -223,10 +223,10 @@ Operation                LogicalResourceId        ResourceType             Repla
                                                   pi                                              
 -------------------------------------------------------------------------------------------------
 
-Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1669863111/01a61733-c6ea-4b58-8131-709b31637980
+Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1670466187/ff1ecd74-56f1-43c3-9d04-e4bacea714cb
 
 
-2022-12-01 02:52:03 - Waiting for stack create/update to complete
+2022-12-08 02:23:18 - Waiting for stack create/update to complete
 
 CloudFormation events from stack operations (refresh every 0.5 seconds)
 -------------------------------------------------------------------------------------------------
@@ -307,9 +307,9 @@ invocation result:
             "disableExecuteApiEndpoint": false
         },
         {
-            "id": "usjix92aqe",
+            "id": "m7sb8dn7ob",
             "name": "lambda-cobol-stack",
-            "createdDate": "2022-12-01T02:52:41+00:00",
+            "createdDate": "2022-12-08T02:23:56+00:00",
             "version": "1.0",
             "apiKeySource": "HEADER",
             "endpointConfiguration": {
@@ -317,17 +317,12 @@ invocation result:
                     "EDGE"
                 ]
             },
-            "tags": {
-                "aws:cloudformation:logical-id": "ServerlessRestApi",
-                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:898857180311:stack/lambda-cobol-stack/1b900210-7123-11ed-8b05-0a5f690283d7",
-                "aws:cloudformation:stack-name": "lambda-cobol-stack"
-            },
             "disableExecuteApiEndpoint": false
         }
     ]
 }
-api id: usjix92aqe
+api id: m7sb8dn7ob
  
-### Running curl https request to https://usjix92aqe.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
+### Running curl https request to https://m7sb8dn7ob.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
 Hello World from COBOL! 
 ```
