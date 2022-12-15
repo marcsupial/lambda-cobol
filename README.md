@@ -143,7 +143,7 @@ Below are the logs of the last execution related to the Lamdba service operated 
 
 ```
  
-### execution date: Thu Dec  8 02:21:13 UTC 2022
+### execution date: Thu Dec 15 02:23:49 UTC 2022
  
 ### Check existing Lambdas functions...
 {
@@ -171,6 +171,10 @@ Below are the logs of the last execution related to the Lamdba service operated 
             ],
             "EphemeralStorage": {
                 "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
             }
         }
     ]
@@ -223,10 +227,10 @@ Operation                LogicalResourceId        ResourceType             Repla
                                                   pi                                              
 -------------------------------------------------------------------------------------------------
 
-Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1670466187/ff1ecd74-56f1-43c3-9d04-e4bacea714cb
+Changeset created successfully. arn:aws:cloudformation:us-east-1:898857180311:changeSet/samcli-deploy1671071140/30bc3fec-4082-470f-a992-1c1ce10c501c
 
 
-2022-12-08 02:23:18 - Waiting for stack create/update to complete
+2022-12-15 02:25:51 - Waiting for stack create/update to complete
 
 CloudFormation events from stack operations (refresh every 0.5 seconds)
 -------------------------------------------------------------------------------------------------
@@ -246,10 +250,10 @@ CREATE_IN_PROGRESS       AWS::ApiGateway::RestA   ServerlessRestApi        Resou
                          pi                                                Initiated              
 CREATE_COMPLETE          AWS::ApiGateway::RestA   ServerlessRestApi        -                      
                          pi                                                                       
-CREATE_IN_PROGRESS       AWS::ApiGateway::Deplo   ServerlessRestApiDeplo   -                      
-                         yment                    ymentaf1c952223                                 
 CREATE_IN_PROGRESS       AWS::Lambda::Permissio   HelloWorldCobolGetReso   -                      
                          n                        urcePermissionProd                              
+CREATE_IN_PROGRESS       AWS::ApiGateway::Deplo   ServerlessRestApiDeplo   -                      
+                         yment                    ymentaf1c952223                                 
 CREATE_IN_PROGRESS       AWS::Lambda::Permissio   HelloWorldCobolGetReso   Resource creation      
                          n                        urcePermissionProd       Initiated              
 CREATE_IN_PROGRESS       AWS::ApiGateway::Deplo   ServerlessRestApiDeplo   Resource creation      
@@ -307,9 +311,9 @@ invocation result:
             "disableExecuteApiEndpoint": false
         },
         {
-            "id": "m7sb8dn7ob",
+            "id": "ipbmg3tpji",
             "name": "lambda-cobol-stack",
-            "createdDate": "2022-12-08T02:23:56+00:00",
+            "createdDate": "2022-12-15T02:26:29+00:00",
             "version": "1.0",
             "apiKeySource": "HEADER",
             "endpointConfiguration": {
@@ -321,8 +325,8 @@ invocation result:
         }
     ]
 }
-api id: m7sb8dn7ob
+api id: ipbmg3tpji
  
-### Running curl https request to https://m7sb8dn7ob.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
+### Running curl https request to https://ipbmg3tpji.execute-api.us-east-1.amazonaws.com/Prod/lambda-cobol-hello-world ...
 Hello World from COBOL! 
 ```
